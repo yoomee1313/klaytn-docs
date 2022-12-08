@@ -17,7 +17,7 @@ When block generation is complete, the block is propagated to all the other CNs.
 Klaytn's Baobab and Cypress networks currently have the following restrictions on the transaction execution:
 
 * A transaction must set its gas price to Klaytn's [unit price](../klaytn-native-coin-klay.md/#units-of-klay), _i.e._, 250 ston.
-* A transaction which has bigger execution cost than the computation cost limit will be discarded. Please refer to [computation cost](computation-cost/computation-cost.md)
+* A transaction which has bigger execution cost than the computation cost limit will be discarded. Please refer to [computation cost](computation-cost/computation-cost-istanbul-ver.md)
 
 ## Data Structures <a id="data-structures"></a>
 
@@ -74,7 +74,7 @@ A _smart contract_ consists of a collection of code \(functions\) and data \(sta
 
 ### Creating Smart Contracts <a id="creating-smart-contracts"></a>
 
-A smart contract can be created in the Klaytn blockchain by sending a transaction to an empty address with the binary as data. The binary can be in various formats; however, Klaytn currently supports one binary format, EVM bytecode. It is worth pointing out that this transaction requires a payment for execution. The account balance on the sender's account will be reduced according to the transaction fee model after the transaction has been stored in a block. After some time, the transaction should appear in a block, which confirms that the state it entails reached a consensus. At this point, the smart contract now exists in the Klaytn blockchain.
+A smart contract can be created in the Klaytn blockchain by sending a transaction to an empty address with the binary as data. The binary can be in various formats; however, Klaytn currently supports one binary format, EVM bytecode. It is worth pointing out that this transaction requires a payment for execution. The account balance on the sender's account will be reduced according to the transaction fee model after the transaction has been stored in a block. After some time, the transaction should appear in a block, which confirms that the state it entails reached a consensus. At this point, the smart contract now exists in the Klaytn blockchain. As eip-3541 is brought at the Kore hardfork, deployment of a new code starting with the 0xEF byte is not allowed.
 
 ### Executing Smart Contracts <a id="executing-smart-contracts"></a>
 

@@ -33,7 +33,7 @@
 | Validator reward | Total amount of KLAY that validators receive from block reward |
 
 
-[Klaytn Virtual Machine]: ../klaytn/design/computation/klaytn-virtual-machine/klaytn-virtual-machine.md
+[Klaytn Virtual Machine]: ../klaytn/design/computation/klaytn-virtual-machine/klaytn-virtual-machine-previous.md
 [Klaytn Account Types]: ../klaytn/design/accounts.md#klaytn-account-types
 [KLAY]: ../klaytn/design/klaytn-native-coin-klay.md
 [Unit of KLAY]: ../klaytn/design/klaytn-native-coin-klay.md#units-of-klay
